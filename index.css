@@ -280,3 +280,28 @@ input, button, textarea, select {
 .dot-indicators > [aria-selected="true"] {
     background-color: hsl(var(--clr-white) / 1);
 }
+
+.numbered-indicators > * {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 2rem;
+    border: 0;
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white) / 1);
+    border: 1px solid hsl(var(--clr-white) / .25);
+}
+
+.numbered-indicators > *:hover, .numbered-indicators > *:focus {
+    border: 1px solid hsl(var(--clr-white) / .75);
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white) / 1);
+}
+
+.numbered-indicators > [aria-selected="true"] {
+    background-color: hsl(var(--clr-white) / 1);
+    color: hsl(var(--clr-dark));
+}
