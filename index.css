@@ -81,6 +81,15 @@ input, button, textarea, select {
     gap: var(--gap, 1rem);
 }
 
+/* SELECT EVERYTHING THAT HAS A SIBLING DIRECTLY BEFORE IT */
+/*------------ .flow > * + * -------- */
+/* Another way to think about it is *:not(:first-child) */
+/* The applied way lowers specificity as much as possible, helpful when overriding */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    border: 1px solid red;
+}
+
 .container {
     padding-inline: 2em;
     max-width: 80rem;
@@ -190,4 +199,15 @@ input, button, textarea, select {
     margin-right: .5em;
     font-weight: 700;
     color: hsl(var(--clr-white) / .25)
+}
+
+
+/* -------------COMPONENTS--------- */
+.large-button {
+    padding: 0 2em;
+    display: grid;
+    aspect-ratio: 1;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
