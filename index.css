@@ -207,7 +207,7 @@ input, button, textarea, select {
     position: relative;
     z-index: 1;
     padding: 0 2em;
-    display: grid;
+    display: inline-grid;
     aspect-ratio: 1;
     place-items: center;
     text-decoration: none;
