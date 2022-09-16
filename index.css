@@ -120,6 +120,10 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.display-block {
+  display: block;
+}
+
 /* SELECT EVERYTHING THAT HAS A SIBLING DIRECTLY BEFORE IT */
 /*------------ .flow > * + * -------- */
 /* Another way to think about it is *:not(:first-child) */
