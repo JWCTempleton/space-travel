@@ -141,6 +141,8 @@ select {
 .grid-container {
   display: grid;
   text-align: center;
+  place-items: center;
+  padding-inline: 1rem;
 }
 
 @media (min-width: 45em) {
@@ -152,8 +154,13 @@ select {
       );
   }
 
+  .grid-container--home {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+  }
+
   .grid-container > * {
-    max-width: 45ch;
+    max-width: 50ch;
   }
 
   .grid-container > *:first-child {
