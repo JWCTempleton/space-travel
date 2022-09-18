@@ -318,6 +318,24 @@ select {
   margin: 0;
 }
 
+@media (max-width: 35rem) {
+  .primary-navigation {
+    --underline-gap: 0.8rem;
+    position: fixed;
+    z-index: 1000;
+    background: salmon;
+    inset: 0 0 0 30%;
+    list-style: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+}
+
 .primary-navigation a {
   text-decoration: none;
 }
