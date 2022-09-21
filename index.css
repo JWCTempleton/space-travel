@@ -186,6 +186,21 @@ select {
   border: 0;
 }
 
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
 /* -----------UTILITY COLORS------------ */
 .bg-dark {
   background-color: hsl(var(--clr-dark));
@@ -353,7 +368,7 @@ select {
     z-index: 1000;
     inset: 0 0 0 30%;
     list-style: none;
-    padding: min(20rem, 15vh) 2rem;
+    padding: min(20rem, 15vh) 2 rem;
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
